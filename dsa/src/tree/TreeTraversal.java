@@ -1,16 +1,12 @@
-package Tree;
+package dsa.src.tree;
 
 public class TreeTraversal {
-	
-	Node root;
-	
+	TreeNode root;
 	TreeTraversal() {
-		
 		root = null;
 	}
 	
-	void inOrder(Node node) { 				// In-order traversal
-		
+	void inOrder(TreeNode node) { 				// In-order traversal
 		if(node == null) {
 			return;
 		}
@@ -19,8 +15,7 @@ public class TreeTraversal {
 		inOrder(node.right);				//right
 	}
 	
-	void preOrder(Node node) {				// Pre-order traversal
-		
+	void preOrder(TreeNode node) {				// Pre-order traversal
 		if(node == null) {
 			return;
 		}
@@ -30,12 +25,10 @@ public class TreeTraversal {
 		preOrder(node.right);				// right
 	}
 	
-	void postOrder(Node node) {				// Post-order traversal
-		
+	void postOrder(TreeNode node) {				// Post-order traversal
 		if(node == null) {
 			return;
 		}
-		
 		postOrder(node.left);
 		postOrder(node.right);
 		System.out.print(node.data+"\t");
@@ -43,18 +36,18 @@ public class TreeTraversal {
 	
 	public static void main(String[] args) {
 		TreeTraversal tr = new TreeTraversal();
-		tr.root = new Node(1);
-		tr.root.left = new Node(12);
-		tr.root.right =  new Node(2);
-		tr.root.left.left = new Node(5);
-		tr.root.left.right = new Node(6);
+		tr.root = new TreeNode(1);
+		tr.root.left = new TreeNode(12);
+		tr.root.right =  new TreeNode(2);
+		tr.root.left.left = new TreeNode(5);
+		tr.root.left.right = new TreeNode(6);
 		System.out.println("Inorder Traversal is: ");
 		tr.inOrder(tr.root);
 		System.out.println();
 		System.out.println("Preorder Traversal is: ");
 		tr.preOrder(tr.root);
 		System.out.println();
-		System.out.println("Posorder Traversal is: ");
+		System.out.println("Postorder Traversal is: ");
 		tr.postOrder(tr.root);
 
 	}

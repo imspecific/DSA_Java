@@ -1,9 +1,9 @@
-package LinkedList;
+package dsa.src.linkedlist;
 
-public class Node {
+public class LLNode {
 
 	int data;
-	Node next;
+	LLNode next;
 	
 	void display() {
 		System.out.println(data+"\t");
