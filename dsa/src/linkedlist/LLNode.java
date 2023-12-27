@@ -4,8 +4,12 @@ public class LLNode {
 
 	int data;
 	LLNode next;
-	
-	void display() {
-		System.out.println(data+"\t");
+	public LLNode(int data1){
+		this.data = data1;
+		this.next = null;
+	}
+	public LLNode(int data1, LLNode next1) {
+		this.data = data1;
+		this.next = next1;
 	}
 }
