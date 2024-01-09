@@ -1,7 +1,5 @@
 package dsa.src.linkedlist;
 
-import com.sun.media.sound.SimpleSoundbank;
-
 class LLOperations {
     public static void main(String[] args) {
         LLNode head = null;

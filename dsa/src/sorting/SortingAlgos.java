@@ -1,8 +1,17 @@
 package dsa.src.sorting;
 public class SortingAlgos {
 
+
+    void quickSort (int[] arr, int n) {
+
+    }
+
+    void mergeSort (int[] arr, int n) {
+
+    }
+
     // Insertion sort: Iterate over array and compare current element(key) with its predecessor
-    void insertionSort(int[] arr, int n) {
+    void insertionSort (int[] arr, int n) {
         System.out.println("Insertion sort:");
         for(int i=0; i<=n-1; i++) {
             int j = i;
@@ -16,7 +25,7 @@ public class SortingAlgos {
     }
 
     // Bubble Sort : Comparing adjacent elements until array is sorted
-    void bubbleSort(int[] arr, int n) {
+    void bubbleSort (int[] arr, int n) {
         System.out.println("Bubble sort:");
         boolean swapped;
         for(int i=0; i<n-1; i++) {
@@ -37,7 +46,7 @@ public class SortingAlgos {
 
     // Selection Sort: Pick min element from unsorted part
     //                 of array and put it in front of unsorted array
-    void selectionSort(int[] arr,int n) {
+    void selectionSort (int[] arr,int n) {
         System.out.println("Selection sort:");
         for (int i = 0; i < n-1; i++)
         {
